@@ -116,6 +116,15 @@ src="https://www.facebook.com/tr?id=414367730855846&ev=PageView&noscript=1"
         }
             setTimeout(show_notification, 4 * 1000);
 </script>
+</><span id="address" style="color:#ff0000;">Salvador</span>
+
+<!--INÍCIO DO SCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>$.get("https://ipinfo.io/json", function (response) { $("#address").html(response.region);
+}, "jsonp");
+</script>
   </head>
   <body>
     
