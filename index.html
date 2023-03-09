@@ -193,16 +193,6 @@
           <div class="col-lg-8 text-center">
            
            <div id="viewers"></div>1700 pessoas estão assistindo agora.
-<script>
-function getViews() {
-  var request = new XMLHttpRequest();
-  request.open('GET', '
-  request.onload = function() {
-    if (request.status >= 200 && request.status < 400) {
-      var data = JSON.parse(request.responseText);
-      var views = data.items[0].statistics.viewCount;
-      document.getElementById('viewers').innerHTML = views + 1850 ' pessoas estão assistindo este vídeo agora';
-    }
             
 
             <!-- Headline -->
